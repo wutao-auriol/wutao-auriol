@@ -1,0 +1,16 @@
+AUDIT FINAL — 6 AOÛT 2026
+
+- 35 pages HTML analysées.
+- 28 pages de la rubrique « Tout savoir » harmonisées avec l’en-tête commun.
+- 33 URL du sitemap XML validées.
+- Tous les liens, ancres et fichiers locaux contrôlés : aucune cible manquante.
+- 173 ressources image inspectées et décodées sans erreur ; dimensions intrinsèques et textes alternatifs vérifiés.
+- 2 documents PDF inspectés et validés.
+- Métadonnées essentielles, URL canoniques, sitemap XML, page 404 et redirection de l’ancienne page contrôlés.
+- Syntaxes HTML, CSS et JavaScript validées.
+- 105 rendus automatisés validés avec Chromium : les 35 pages en bureau 1440 px, tablette 820 px et mobile 390 px.
+- Menus mobiles, logos, Hero, carrousels, visionneuse, commandes tactiles et absence de débordement horizontal contrôlés.
+- Compatibilité renforcée pour Chrome, Edge, Firefox et Safari/WebKit : règles responsive, préfixe WebKit, solution de repli IntersectionObserver et navigation mobile accessible.
+
+REMARQUE SÉCURITÉ
+Les en-têtes de sécurité sont fournis pour Apache/OVH (.htaccess) et Netlify (_headers). La sécurité finale dépend également de l’hébergeur, du HTTPS et de sa configuration serveur.
