@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><meta charset="utf-8">
 <title>Wu Tao Auriol | Kung-Fu, Sanda, Tai Chi et Self-défense</title>
 <meta name="description" content="Découvrez le club Wu Tao Wang Xue Long à Auriol : cours de Kung-Fu, Sanda, Tai Chi Chen et self-défense pour enfants, adolescents et adultes.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -17,7 +17,7 @@
 <meta name="twitter:title" content="Wu Tao Auriol | Kung-Fu, Sanda, Tai Chi et Self-défense">
 <meta name="twitter:description" content="Découvrez le club Wu Tao Wang Xue Long à Auriol : cours de Kung-Fu, Sanda, Tai Chi Chen et self-défense pour enfants, adolescents et adultes.">
 <script type="application/ld+json" data-seo="true">{"@context":"https://schema.org","@type":"SportsActivityLocation","name":"Wu Tao Wang Xue Long","url":"https://www.wutao-auriol.fr/","description":"Découvrez le club Wu Tao Wang Xue Long à Auriol : cours de Kung-Fu, Sanda, Tai Chi Chen et self-défense pour enfants, adolescents et adultes.","address":{"@type":"PostalAddress","addressLocality":"Auriol","addressRegion":"Provence-Alpes-Côte d’Azur","addressCountry":"FR"},"sport":["Kung-Fu","Wushu","Sanda","Tai Chi Chuan","Self-défense","Qi Gong"]}</script>
-<meta charset="utf-8"/>
+
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -32,8 +32,25 @@
 
 
 
-<link href="styles.css?v=20260807-16" rel="stylesheet"/></head>
-<body class="page-home-v22">
+<link href="styles-20261013-v3.css" rel="stylesheet"/><noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript><style id="instructeurs-disposition-v3">
+/* Correction v3 intégrée directement à la page. */
+#instructeurs .instr-card-lead{width:100%;box-sizing:border-box;margin-bottom:24px;display:grid;grid-template-columns:112px minmax(0,1fr);gap:0 26px;}
+#instructeurs .instr-card-lead .avatar{grid-column:1;grid-row:1 / 3;width:104px;height:104px;margin:0;}
+#instructeurs .instr-card-lead h3,#instructeurs .instr-card-lead .role{grid-column:2;}
+#instructeurs .instr-card-lead ul{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 30px;margin-top:24px;}
+#instructeurs .instr-grid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px;align-items:stretch;}
+#instructeurs .instr-card{min-width:0;box-sizing:border-box;}
+@media(max-width:600px){
+ #instructeurs .instr-grid{grid-template-columns:minmax(0,1fr)!important;}
+ #instructeurs .instr-card-lead{grid-template-columns:76px minmax(0,1fr);gap:0 16px;}
+ #instructeurs .instr-card-lead .avatar{width:72px;height:72px;}
+ #instructeurs .instr-card-lead ul{grid-template-columns:minmax(0,1fr);}
+}
+
+/* Même mouvement au survol pour Christian que pour les assistants. */
+#instructeurs .instr-card-lead:hover{transform:translateY(-8px);box-shadow:var(--shadow);z-index:2;transition:transform .3s ease,box-shadow .3s ease;}
+</style></head>
+<body data-version="wu-tao-20261013-v3" class="page-home-v22">
 <!-- ============ HEADER ============ -->
 <header id="siteHeader">
 <div class="nav-inner">
@@ -58,13 +75,14 @@
 <li><a href="#contact">Contact </a></li>
 </ul>
 </nav>
-<a class="btn nav-cta btn-crisp" href="fiche-inscription-2026-2027.pdf" rel="noopener" target="_blank">Inscription</a>
+<a class="btn nav-cta btn-crisp" href="https://www.helloasso.com/associations/wu-tao-wang-xue-long" rel="noopener noreferrer" target="_blank">Inscription HelloAsso</a>
 <button type="button" aria-label="Menu" aria-controls="siteNav" aria-expanded="false" class="burger" id="burgerBtn"><span></span><span></span><span></span></button>
 </div>
 </header>
+<main id="contenu-principal">
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-<img class="hero-christian-bg" src="assets/hero-christian-v4.png?v=20260807-16" alt="" aria-hidden="true" width="1216" height="1293" fetchpriority="high"/>
+<img class="hero-christian-bg" src="assets/hero-christian-v5.png" alt="" aria-hidden="true" width="1536" height="1024" fetchpriority="high"/>
 <div aria-hidden="true" class="hero-glow"></div>
 <p class="kicker reveal punch">Kung-Fu · Sanda · Tai Chi · Self-défense — Auriol</p>
 <h1 class="hero-title reveal">Libère le <span>potentiel</span><br/>qui est en toi.</h1>
@@ -96,6 +114,8 @@
 <img width="1054" height="1492" alt="Affiche des cours de Tai-Chi à Auriol" class="school-slide" loading="lazy" src="assets/embedded/image-02887195165f1cce.jpg"/>
 <img width="1023" height="1537" alt="Affiche des cours de self-défense femmes à Auriol — tous les lundis de 18h à 19h" class="school-slide" loading="lazy" src="assets/embedded/image-0816bff2d4d87be5.jpg"/>
 </div>
+<button class="school-arrow school-arrow-prev" type="button" aria-label="Afficher le flyer précédent">&#10094;</button>
+<button class="school-arrow school-arrow-next" type="button" aria-label="Afficher le flyer suivant">&#10095;</button>
 <div aria-hidden="true" class="school-dots">
 <span class="active"></span><span></span><span></span><span></span><span></span>
 </div>
@@ -225,6 +245,7 @@
 <div class="price-links">
 <a href="fiche-tarifs-2026-2027.pdf" id="tarifsPdfLink" rel="noopener" target="_blank">Fiche tarifs 2026–2027 (PDF)</a>
 <a href="fiche-inscription-2026-2027.pdf" rel="noopener" target="_blank">Fiche inscription (PDF)</a>
+<a href="https://www.helloasso.com/associations/wu-tao-wang-xue-long" rel="noopener noreferrer" target="_blank">Inscription HelloAsso</a>
 </div>
 <p class="price-note">Habilitation officielle Sport Santé — <a href="https://12b49714-841a-c3aa-9e54-dfdd286e4ef4.filesusr.com/ugd/cf687c_68556e0bbac54657af764362afaab238.pdf" rel="noopener noreferrer" style="border-bottom:1px solid var(--ink-faint)" target="_blank">voir le document</a></p>
 </div>
@@ -243,7 +264,7 @@
 <div class="disc-card shop-card"><h3 class="shop-product-title">Tee-shirt et sweat à capuches</h3>
 <div class="disc-thumb"><img width="1536" height="1024" alt="Tee-shirt et sweat à capuches Wu Tao Wang Xue Long" src="assets/embedded/image-402146fae814c8e2.png"/></div>
 <p>Articles floqués au nom de l'école, disponibles en plusieurs tailles.</p>
-<a class="link" href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/boutiques/vente-de-tee-shirt-et-de-sweat-a-capuches-au-nom-de-notre-ecole" rel="noopener noreferrer" target="_blank">Commander sur HelloAsso →</a>
+<a class="link" href="https://www.helloasso.com/associations/wu-tao-wang-xue-long/boutiques/vente-de-tee-shirt-et-de-sweat-a-capuches-au-nom-de-notre-ecole-2026" rel="noopener noreferrer" target="_blank">Commander sur HelloAsso →</a>
 </div>
 <div class="disc-card shop-card"><h3 class="shop-product-title">Tenues enfants et adolescents</h3>
 <div class="disc-thumb"><img width="1254" height="1254" alt="Tenues Kung-Fu enfants et adolescents" src="assets/embedded/image-4c0720e95e3c20c2.png"/></div>
@@ -318,8 +339,7 @@
 <span class="eyebrow" style="justify-content:center">L'équipe </span>
 <h2>Trois instructeurs diplômés d'État </h2>
 </div>
-<div class="instr-grid reveal">
-<div class="instr-card">
+<div class="instr-card instr-card-lead reveal">
 <div class="avatar"><img width="552" height="529" alt="Christian Michaud, instructeur en chef" src="assets/embedded/image-e83c5497163c166f.jpg"/></div>
 <h3>Christian Michaud</h3>
 <span class="role">Enseignant Éducation Nationale · Instructeur en chef</span>
@@ -329,8 +349,25 @@
 <li>Diplômé d'État — Ministère de la Jeunesse et des Sports</li>
 <li>Formé auprès des moines du temple de Shaolin et de la délégation chinoise</li>
 <li>Juge-arbitre Wushu (FFAEMC / FFK), certifié pratique &amp; handicap</li>
+<li>Intégration au corps de jury de Duan Kung-Fu — FFAEMC</li>
+<li>Ceinture noire 2e Duan Kung-Fu (WU DAO)</li>
+<li>Ceinture noire 1er Duan de Tai Chi : Kung-Fu (FFK)</li>
+<li>Diplômé de la Fédération Internationale WU DAO</li>
+<li>Attestation technique d’instructeur de la Fédération Française WUSHU</li>
+<li>Attestation technique d’instructeur pour enfants de la Fédération WUSHU</li>
+<li>Formation en pratique et handicap mental et psychique de la Fédération Française WUSHU</li>
+<li>Certificat de moniteur de la Fédération Française WUSHU</li>
+<li>Diplôme d’instructeur fédéral (D.I.F.) de la fédération FFK</li>
+<li>Certifié pour les enseignements adaptés et la scolarisation des élèves en situation de handicap</li>
+<li>Formations régulières sur les handicaps cognitifs (autisme, trisomie 21, dyslexie…) par l’Éducation Nationale</li>
+<li>Animation d’une section UNSS WU DAO en lycée (Marseille)</li>
+<li>Participation à des stages réguliers d’arts martiaux avec les moines Shaolin en France, et séjours en Chine au sein des temples Shaolin et Wu Dang</li>
+<li>Participation et organisation de stages jeunes (14–17 ans) de remise en condition physique pour l’athlétisme</li>
+<li>Athlète national de 400/800 mètres et relais</li>
+<li>Sélections internationales (Italie, Maroc, Espagne, Allemagne, Suisse)</li>
 </ul>
 </div>
+<div class="instr-grid reveal">
 <div class="instr-card">
 <div class="avatar"><img width="212" height="210" alt="Josiane Rosay, assistante instructeur" src="assets/embedded/image-a325637c52934b41.jpg"/></div>
 <h3>Josiane Rosay</h3>
@@ -390,6 +427,7 @@
 </div>
 </section>
 <!-- ============ FOOTER ============ -->
+</main>
 <footer>
 <div class="wrap">
 <div class="foot-top">
@@ -422,5 +460,5 @@
 
 
 
-<script defer="" src="script.js"></script></body>
+<script defer="" src="script.js?v=20261013-2"></script></body>
 </html>

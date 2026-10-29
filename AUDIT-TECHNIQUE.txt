@@ -1,16 +1,34 @@
-AUDIT FINAL — 6 AOÛT 2026
+VÉRIFICATION DU 13 OCTOBRE 2026 — VERSION 2
 
-- 35 pages HTML analysées.
-- 28 pages de la rubrique « Tout savoir » harmonisées avec l’en-tête commun.
-- 33 URL du sitemap XML validées.
-- Tous les liens, ancres et fichiers locaux contrôlés : aucune cible manquante.
-- 173 ressources image inspectées et décodées sans erreur ; dimensions intrinsèques et textes alternatifs vérifiés.
-- 2 documents PDF inspectés et validés.
-- Métadonnées essentielles, URL canoniques, sitemap XML, page 404 et redirection de l’ancienne page contrôlés.
-- Syntaxes HTML, CSS et JavaScript validées.
-- 105 rendus automatisés validés avec Chromium : les 35 pages en bureau 1440 px, tablette 820 px et mobile 390 px.
-- Menus mobiles, logos, Hero, carrousels, visionneuse, commandes tactiles et absence de débordement horizontal contrôlés.
-- Compatibilité renforcée pour Chrome, Edge, Firefox et Safari/WebKit : règles responsive, préfixe WebKit, solution de repli IntersectionObserver et navigation mobile accessible.
+MODIFICATIONS
+Christian Michaud : bloc sur toute la largeur ; liste sur deux colonnes.
+Josiane Rosay et Guilhem Bouchez : deux blocs côte à côte.
+Sous 600 px : trois blocs et compétences empilés sur une seule colonne.
+Lien boutique tee-shirt/sweat HelloAsso remplacé par l’adresse 2026 demandée.
+Accueil index.html et Theme_Moderne_V22_nouveaux_onglets.html synchronisés.
+Ajout du repère main à l’accueil ; charset UTF-8 placé au début du head.
+Descriptions SEO nettoyées à partir des introductions des pages.
+Versions CSS/JS mises à jour pour le cache des navigateurs.
+Focus clavier visible ; animations réduites selon la préférence système.
+Sans JavaScript, contenu reveal rendu visible ; le carrousel respecte le mouvement réduit.
 
-REMARQUE SÉCURITÉ
-Les en-têtes de sécurité sont fournis pour Apache/OVH (.htaccess) et Netlify (_headers). La sécurité finale dépend également de l’hébergeur, du HTTPS et de sa configuration serveur.
+CONTRÔLES RÉALISÉS
+35 pages HTML : fermeture/imbrication des balises, IDs uniques, un titre et un H1, langue, métadonnées description/viewport, attributs alt des images.
+176 images décodées sans erreur.
+Chemins de fichiers et ancres locales : aucune cible manquante.
+848 références HTML locales testées en HTTP sous un préfixe de dossier : réponses 200.
+JSON-LD parsable ; sitemap XML parsable et dates de modification actualisées.
+Syntaxe du JavaScript contrôlée avec Node.
+Aucune ressource chargée par URL HTTP non chiffrée.
+.nojekyll présent ; fichiers directement à la racine de l’archive.
+Aucun fichier individuel supérieur à 4 Mo ; le ZIP doit être décompressé avant import.
+
+LIMITES ET RÉGLAGES RESTANTS
+Tests visuels et interactifs Chromium/Firefox/WebKit non réalisés : moteurs de navigateur indisponibles et téléchargement bloqué dans l’environnement.
+Aucun test sur appareil Android/iOS physique, aucune garantie universelle de compatibilité.
+Site non déployé sur GitHub ; certificat TLS et redirection HTTPS à vérifier après publication via Settings > Pages > Enforce HTTPS.
+Le domaine des canonical, Open Graph, JSON-LD, robots.txt et sitemap reste https://www.wutao-auriol.fr/. Ajustement nécessaire si l’adresse finale est uniquement github.io.
+Les services externes et leur disponibilité ne sont pas garantis par l’audit local.
+Les configurations .htaccess, _headers et _redirects ne sont pas prises en charge par GitHub Pages.
+
+CORRECTION V3 : Christian sorti de la grille ; grille réservée aux deux assistants. Styles de disposition intégrés à la page et nouveau nom de fichier CSS pour éviter une ancienne copie en cache. Lien HelloAsso 2026 contrôlé dans le HTML livré.

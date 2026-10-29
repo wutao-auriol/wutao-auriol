@@ -1338,3 +1338,33 @@ body.error-page p { margin-bottom: 22px; color: #ded9e0; }
     margin-bottom: 28px !important;
   }
 }
+
+/* Profils de longueurs différentes : éviter les cartes vides étirées. */
+.instr-grid{align-items:start}
+
+/* Équipe : instructeur en chef sur toute la largeur, assistants en binôme. */
+#instructeurs .instr-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}
+#instructeurs .instr-card{min-width:0}
+#instructeurs .instr-card-lead{grid-column:1 / -1;display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:26px;align-items:start}
+#instructeurs .instr-card-lead .avatar{grid-column:1;grid-row:1 / 3;width:104px;height:104px;margin:0}
+#instructeurs .instr-card-lead h3{grid-column:2;align-self:end;font-size:24px}
+#instructeurs .instr-card-lead .role{grid-column:2;margin-bottom:20px}
+#instructeurs .instr-card-lead ul{grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;margin-top:24px}
+#instructeurs .instr-card-lead li{break-inside:avoid;border-top:1px solid var(--line)}
+#instructeurs .instr-card li{overflow-wrap:anywhere;line-height:1.6}
+@media(max-width:600px){
+ #instructeurs .instr-grid{grid-template-columns:minmax(0,1fr)}
+ #instructeurs .instr-card{padding:28px 22px}
+ #instructeurs .instr-card-lead{grid-template-columns:76px minmax(0,1fr);column-gap:16px}
+ #instructeurs .instr-card-lead .avatar{width:72px;height:72px}
+ #instructeurs .instr-card-lead h3{font-size:21px}
+ #instructeurs .instr-card-lead .role{font-size:11px;margin-bottom:0}
+ #instructeurs .instr-card-lead ul{grid-template-columns:minmax(0,1fr);margin-top:20px}
+}
+/* Accessibilité : navigation clavier visible, mouvement réduit si demandé. */
+:focus-visible{outline:3px solid #ffcb69;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ .reveal{opacity:1!important;transform:none!important}
+}
