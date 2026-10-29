@@ -1,0 +1,19 @@
+MISE EN LIGNE SUR GITHUB PAGES
+
+1. Décompresser cette archive sur votre ordinateur.
+2. Déposer le CONTENU du dossier décompressé à la racine du dépôt GitHub : index.html, styles.css, script.js, toutes les autres pages, les PDF, le dossier assets complet et .nojekyll. Ne pas déposer seulement le ZIP ni ajouter un dossier intermédiaire.
+3. Dans Settings > Pages, choisir Deploy from a branch, puis la branche main et le dossier / (root), et Save.
+4. Attendre la fin du déploiement puis ouvrir l’adresse proposée par GitHub Pages.
+5. Si des images restent absentes, vérifier que assets ET assets/embedded ont bien été importés, avec les mêmes noms et majuscules/minuscules. Le navigateur ne peut pas lire les images restées à l’intérieur du ZIP.
+
+L’accueil index.html est synchronisé avec Theme_Moderne_V22_nouveaux_onglets.html. Pour les prochaines modifications, conserver ces deux fichiers synchronisés.
+Tous les chemins locaux existants sont relatifs : ils fonctionnent aussi sous https://utilisateur.github.io/nom-du-depot/.
+Les fichiers .htaccess, _headers et _redirects sont conservés pour les autres hébergeurs ; GitHub Pages ne les applique pas. Aucune fonction PHP ni redirection serveur n’est nécessaire au site.
+Les URL SEO (canonical, partage social, données structurées et sitemap) utilisent encore https://www.wutao-auriol.fr/. Si vous utilisez uniquement l’adresse github.io, adapter ces URL une fois le nom du compte et du dépôt connus. Aucun CNAME n’est ajouté sans configuration du domaine.
+Les services externes (Google Fonts, carte, HelloAsso, documents externes) dépendent de leurs fournisseurs.
+
+HTTPS / CERTIFICAT TLS
+Dans Settings > Pages, activer Enforce HTTPS (Appliquer HTTPS). Le certificat est fourni par GitHub Pages, pas par les fichiers HTML. Pour le domaine personnalisé wutao-auriol.fr, les DNS doivent être configurés pour GitHub avant l’émission du certificat. Les fichiers du site ne chargent aucune ressource en HTTP.
+
+VALIDATION FINALE EN LIGNE
+Après publication, vérifier l’adresse définitive, les images, le menu mobile, HelloAsso et les PDF. Les métadonnées et le sitemap restent associés au domaine www.wutao-auriol.fr tant que l’adresse finale n’est pas connue. Un bon balisage ne garantit pas l’indexation par tous les moteurs.

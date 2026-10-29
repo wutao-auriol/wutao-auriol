@@ -1,5 +1,6 @@
 
   // header shadow on scroll
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const header = document.getElementById('siteHeader');
   if (header) {
     window.addEventListener('scroll', () => {
@@ -37,7 +38,7 @@
       const doScroll = () => {
         const headerHeight = header ? header.offsetHeight : 0;
         const y = target.getBoundingClientRect().top + window.pageYOffset - headerHeight - 12;
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        window.scrollTo({ top: y, behavior: reduceMotion ? 'auto' : 'smooth' });
       };
       // give the menu-close transition a moment before scrolling, so the tap isn't lost
       if (wasOpen) { setTimeout(doScroll, 80); } else { doScroll(); }
@@ -63,6 +64,7 @@
     const dots = [...slider.querySelectorAll('.school-dots span')];
     const previousButton = slider.querySelector('.school-arrow-prev');
     const nextButton = slider.querySelector('.school-arrow-next');
+    if (!slides.length) return;
     let current = 0;
     let timer;
 
@@ -76,6 +78,7 @@
 
     const start = () => {
       clearInterval(timer);
+      if (reduceMotion) return;
       timer = setInterval(() => showSlide((current + 1) % slides.length), 3000);
     };
 
