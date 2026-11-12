@@ -1,19 +1,42 @@
-MISE EN LIGNE SUR GITHUB PAGES
+MISE EN LIGNE — GITHUB PAGES
+Site : Wu Tao Auriol
+Dépôt / adresse cible : https://wutao-auriol.github.io/wutao-auriol/
 
-1. Décompresser cette archive sur votre ordinateur.
-2. Déposer le CONTENU du dossier décompressé à la racine du dépôt GitHub : index.html, styles.css, script.js, toutes les autres pages, les PDF, le dossier assets complet et .nojekyll. Ne pas déposer seulement le ZIP ni ajouter un dossier intermédiaire.
-3. Dans Settings > Pages, choisir Deploy from a branch, puis la branche main et le dossier / (root), et Save.
-4. Attendre la fin du déploiement puis ouvrir l’adresse proposée par GitHub Pages.
-5. Si des images restent absentes, vérifier que assets ET assets/embedded ont bien été importés, avec les mêmes noms et majuscules/minuscules. Le navigateur ne peut pas lire les images restées à l’intérieur du ZIP.
+IMPORTANT : cette archive est à DÉCOMPRESSER. Ne déposez pas le ZIP lui-même dans le dépôt.
 
-L’accueil index.html est synchronisé avec Theme_Moderne_V22_nouveaux_onglets.html. Pour les prochaines modifications, conserver ces deux fichiers synchronisés.
-Tous les chemins locaux existants sont relatifs : ils fonctionnent aussi sous https://utilisateur.github.io/nom-du-depot/.
-Les fichiers .htaccess, _headers et _redirects sont conservés pour les autres hébergeurs ; GitHub Pages ne les applique pas. Aucune fonction PHP ni redirection serveur n’est nécessaire au site.
-Les URL SEO (canonical, partage social, données structurées et sitemap) utilisent encore https://www.wutao-auriol.fr/. Si vous utilisez uniquement l’adresse github.io, adapter ces URL une fois le nom du compte et du dépôt connus. Aucun CNAME n’est ajouté sans configuration du domaine.
-Les services externes (Google Fonts, carte, HelloAsso, documents externes) dépendent de leurs fournisseurs.
+1. Décompresser cette archive sur l'ordinateur.
+2. Ouvrir le dossier décompressé.
+3. Copier TOUT SON CONTENU à la racine du dépôt GitHub "wutao-auriol".
+   Il faut voir directement à la racine : index.html, les autres pages HTML,
+   les fichiers CSS/JS, .nojekyll, assets/, articles_presse/, etc.
+4. Vérifier en particulier que le dossier assets/embedded/ est bien présent
+   dans le dépôt GitHub et qu'il contient les fichiers image-*.jpg et image-*.png.
+5. Ne pas créer un niveau supplémentaire du type :
+   wutao-auriol/SITE_WU_TAO_GitHub_V4/index.html
+   ni déposer uniquement le contenu HTML sans les dossiers d'images.
+6. Dans GitHub : Settings > Pages > Build and deployment :
+   Source = Deploy from a branch ; Branch = main ; Folder = /(root) ; Save.
+7. Attendre la fin du déploiement. Dans Actions, vérifier que le déploiement
+   Pages est terminé sans erreur.
+8. Tester ensuite :
+   https://wutao-auriol.github.io/wutao-auriol/
 
-HTTPS / CERTIFICAT TLS
-Dans Settings > Pages, activer Enforce HTTPS (Appliquer HTTPS). Le certificat est fourni par GitHub Pages, pas par les fichiers HTML. Pour le domaine personnalisé wutao-auriol.fr, les DNS doivent être configurés pour GitHub avant l’émission du certificat. Les fichiers du site ne chargent aucune ressource en HTTP.
+SI LES IMAGES RESTENT EN 404
+- Dans le dépôt GitHub, ouvrir assets/embedded/ et vérifier que le fichier
+  image-792d39cc2fbb7413.jpg est réellement visible.
+- Tester directement cette adresse :
+  https://wutao-auriol.github.io/wutao-auriol/assets/embedded/image-792d39cc2fbb7413.jpg
+- Si GitHub indique que le fichier n'existe pas, réimporter le dossier assets/
+  complet depuis cette archive, puis attendre le nouveau déploiement.
+- Respecter exactement les majuscules/minuscules des noms de dossiers et fichiers.
+- Vérifier que le dépôt et la branche publiés dans Settings > Pages sont bien
+  ceux que vous venez de mettre à jour.
 
-VALIDATION FINALE EN LIGNE
-Après publication, vérifier l’adresse définitive, les images, le menu mobile, HelloAsso et les PDF. Les métadonnées et le sitemap restent associés au domaine www.wutao-auriol.fr tant que l’adresse finale n’est pas connue. Un bon balisage ne garantit pas l’indexation par tous les moteurs.
+CONSERVATION DU SITE
+Les chemins locaux du site sont relatifs et les fichiers sont prévus pour être
+servis depuis la racine du dépôt GitHub Pages (URL avec /wutao-auriol/).
+Le fichier .nojekyll est inclus. Les fichiers .htaccess, _headers et _redirects
+peuvent rester dans l'archive, mais GitHub Pages ne les applique pas.
+Les URL SEO (canonical, Open Graph, données structurées et sitemap) restent
+associées à https://www.wutao-auriol.fr/ ; elles devront être adaptées si le
+site est définitivement hébergé uniquement sur github.io.

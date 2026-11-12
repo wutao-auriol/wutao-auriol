@@ -1,34 +1,28 @@
-VÉRIFICATION DU 13 OCTOBRE 2026 — VERSION 2
+AUDIT TECHNIQUE — VERSION PRÉPARÉE POUR GITHUB PAGES
+Date de préparation : 12 novembre 2026
 
-MODIFICATIONS
-Christian Michaud : bloc sur toute la largeur ; liste sur deux colonnes.
-Josiane Rosay et Guilhem Bouchez : deux blocs côte à côte.
-Sous 600 px : trois blocs et compétences empilés sur une seule colonne.
-Lien boutique tee-shirt/sweat HelloAsso remplacé par l’adresse 2026 demandée.
-Accueil index.html et Theme_Moderne_V22_nouveaux_onglets.html synchronisés.
-Ajout du repère main à l’accueil ; charset UTF-8 placé au début du head.
-Descriptions SEO nettoyées à partir des introductions des pages.
-Versions CSS/JS mises à jour pour le cache des navigateurs.
-Focus clavier visible ; animations réduites selon la préférence système.
-Sans JavaScript, contenu reveal rendu visible ; le carrousel respecte le mouvement réduit.
+Contrôles réalisés sur l'archive source :
+- 35 pages HTML présentes.
+- 176 images JPG/PNG/GIF/WEBP contrôlées : aucune image corrompue détectée.
+- 586 références locales HTML/CSS/JS contrôlées : aucune cible manquante détectée
+  dans l'archive, avec respect de la casse.
+- Aucun doublon de chemin différant uniquement par les majuscules/minuscules.
+- .nojekyll présent à la racine.
+- Les chemins locaux sont relatifs et adaptés à une publication sous
+  https://wutao-auriol.github.io/wutao-auriol/.
+- Un fichier temporaire caché non référencé a été retiré de l'archive nettoyée.
 
-CONTRÔLES RÉALISÉS
-35 pages HTML : fermeture/imbrication des balises, IDs uniques, un titre et un H1, langue, métadonnées description/viewport, attributs alt des images.
-176 images décodées sans erreur.
-Chemins de fichiers et ancres locales : aucune cible manquante.
-848 références HTML locales testées en HTTP sous un préfixe de dossier : réponses 200.
-JSON-LD parsable ; sitemap XML parsable et dates de modification actualisées.
-Syntaxe du JavaScript contrôlée avec Node.
-Aucune ressource chargée par URL HTTP non chiffrée.
-.nojekyll présent ; fichiers directement à la racine de l’archive.
-Aucun fichier individuel supérieur à 4 Mo ; le ZIP doit être décompressé avant import.
+Constat sur le site publié au moment du contrôle :
+- La page d'accueil est accessible.
+- L'image assets/embedded/image-792d39cc2fbb7413.jpg renvoie une réponse 404
+  sur l'adresse publique, alors que le fichier existe dans cette archive.
+- Cela indique que le contenu actuellement servi par GitHub Pages ne correspond
+  pas entièrement à l'archive fournie, ou que le dossier/fichier n'a pas été
+  publié à l'emplacement attendu. La correction nécessite de republier les
+  fichiers et dossiers complets à la racine du dépôt.
 
-LIMITES ET RÉGLAGES RESTANTS
-Tests visuels et interactifs Chromium/Firefox/WebKit non réalisés : moteurs de navigateur indisponibles et téléchargement bloqué dans l’environnement.
-Aucun test sur appareil Android/iOS physique, aucune garantie universelle de compatibilité.
-Site non déployé sur GitHub ; certificat TLS et redirection HTTPS à vérifier après publication via Settings > Pages > Enforce HTTPS.
-Le domaine des canonical, Open Graph, JSON-LD, robots.txt et sitemap reste https://www.wutao-auriol.fr/. Ajustement nécessaire si l’adresse finale est uniquement github.io.
-Les services externes et leur disponibilité ne sont pas garantis par l’audit local.
-Les configurations .htaccess, _headers et _redirects ne sont pas prises en charge par GitHub Pages.
-
-CORRECTION V3 : Christian sorti de la grille ; grille réservée aux deux assistants. Styles de disposition intégrés à la page et nouveau nom de fichier CSS pour éviter une ancienne copie en cache. Lien HelloAsso 2026 contrôlé dans le HTML livré.
+Limites :
+- L'archive préparée ne peut pas être poussée directement dans le dépôt GitHub
+  depuis cette conversation.
+- Les tests visuels et interactifs sur appareils réels ne sont pas réalisés.
+- Les URL SEO restent liées au domaine www.wutao-auriol.fr.
