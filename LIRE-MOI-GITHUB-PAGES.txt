@@ -1,0 +1,42 @@
+MISE EN LIGNE — GITHUB PAGES
+Site : Wu Tao Auriol
+Dépôt / adresse cible : https://wutao-auriol.github.io/wutao-auriol/
+
+IMPORTANT : cette archive est à DÉCOMPRESSER. Ne déposez pas le ZIP lui-même dans le dépôt.
+
+1. Décompresser cette archive sur l'ordinateur.
+2. Ouvrir le dossier décompressé.
+3. Copier TOUT SON CONTENU à la racine du dépôt GitHub "wutao-auriol".
+   Il faut voir directement à la racine : index.html, les autres pages HTML,
+   les fichiers CSS/JS, .nojekyll, assets/, articles_presse/, etc.
+4. Vérifier en particulier que le dossier assets/embedded/ est bien présent
+   dans le dépôt GitHub et qu'il contient les fichiers image-*.jpg et image-*.png.
+5. Ne pas créer un niveau supplémentaire du type :
+   wutao-auriol/SITE_WU_TAO_GitHub_V4/index.html
+   ni déposer uniquement le contenu HTML sans les dossiers d'images.
+6. Dans GitHub : Settings > Pages > Build and deployment :
+   Source = Deploy from a branch ; Branch = main ; Folder = /(root) ; Save.
+7. Attendre la fin du déploiement. Dans Actions, vérifier que le déploiement
+   Pages est terminé sans erreur.
+8. Tester ensuite :
+   https://wutao-auriol.github.io/wutao-auriol/
+
+SI LES IMAGES RESTENT EN 404
+- Dans le dépôt GitHub, ouvrir assets/embedded/ et vérifier que le fichier
+  image-792d39cc2fbb7413.jpg est réellement visible.
+- Tester directement cette adresse :
+  https://wutao-auriol.github.io/wutao-auriol/assets/embedded/image-792d39cc2fbb7413.jpg
+- Si GitHub indique que le fichier n'existe pas, réimporter le dossier assets/
+  complet depuis cette archive, puis attendre le nouveau déploiement.
+- Respecter exactement les majuscules/minuscules des noms de dossiers et fichiers.
+- Vérifier que le dépôt et la branche publiés dans Settings > Pages sont bien
+  ceux que vous venez de mettre à jour.
+
+CONSERVATION DU SITE
+Les chemins locaux du site sont relatifs et les fichiers sont prévus pour être
+servis depuis la racine du dépôt GitHub Pages (URL avec /wutao-auriol/).
+Le fichier .nojekyll est inclus. Les fichiers .htaccess, _headers et _redirects
+peuvent rester dans l'archive, mais GitHub Pages ne les applique pas.
+Les URL SEO (canonical, Open Graph, données structurées et sitemap) restent
+associées à https://www.wutao-auriol.fr/ ; elles devront être adaptées si le
+site est définitivement hébergé uniquement sur github.io.
